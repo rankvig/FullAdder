@@ -1,7 +1,7 @@
 # Tiny Tapeout SKY Full Adder
 
 A minimal one-bit full adder for learning the Tiny Tapeout flow.
-
+ 
 ## Pin mapping
 
 | Tiny Tapeout pin | Signal |
