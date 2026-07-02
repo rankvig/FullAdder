@@ -2,7 +2,7 @@
 
 import cocotb
 from cocotb.triggers import Timer
-
+ 
 
 @cocotb.test()
 async def test_full_adder_all_combinations(dut):
