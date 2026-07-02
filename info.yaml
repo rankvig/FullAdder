@@ -2,7 +2,7 @@ project:
   title: "3-input Full Adder"
   author: "Nguyen Van Dong Dong"
   discord: ""
-  description: "A basic combinational full adder with A, B, Cin, Sum, and Cout."
+  description: "A basic combinational full adder with A, B, Cin, Sum, and Cout." 
   language: "Verilog"
   clock_hz: 0
   tiles: "1x1"
