@@ -1,28 +1,43 @@
 # 3-input Full Adder
 
-## How it works
+# How it works
 
-This design implements a one-bit full adder.
+This project implements a one-bit combinational full adder.
 
-Inputs:
+It adds three one-bit input values:
 
 - `ui_in[0]`: A
 - `ui_in[1]`: B
 - `ui_in[2]`: Cin
 
-Outputs:
+The circuit produces two outputs:
 
 - `uo_out[0]`: Sum
 - `uo_out[1]`: Cout
 
 The Boolean equations are:
 
-```text
-Sum  = A XOR B XOR Cin
-Cout = (A AND B) OR (A AND Cin) OR (B AND Cin)
-```
+Sum = A XOR B XOR Cin
 
-## Truth table
+Cout = (A AND B) OR (A AND Cin) OR (B AND Cin)
+
+The design is purely combinational. Therefore, the clock and reset
+signals are not used.
+
+# How to test
+
+Set the input values using `ui_in[2:0]`:
+
+- Set `ui_in[0]` to A.
+- Set `ui_in[1]` to B.
+- Set `ui_in[2]` to Cin.
+
+Read the results from:
+
+- `uo_out[0]` for Sum.
+- `uo_out[1]` for Cout.
+
+Use the following truth table:
 
 | A | B | Cin | Sum | Cout |
 |---|---|-----|-----|------|
@@ -35,7 +50,4 @@ Cout = (A AND B) OR (A AND Cin) OR (B AND Cin)
 | 1 | 1 | 0   | 0   | 1    |
 | 1 | 1 | 1   | 1   | 1    |
 
-## How to test
-
-Set A, B, and Cin on `ui_in[2:0]`, then read Sum and Cout from
-`uo_out[1:0]`. The design is combinational and does not require a clock.
+No external hardware is required.
