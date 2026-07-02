@@ -5,7 +5,7 @@ FST ?= -fst
 
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+PROJECT_SOURCES = project.v 
 
 ifneq ($(GATES),yes)
 SIM_BUILD = sim_build/rtl
