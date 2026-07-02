@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-`default_nettype none
+`default_nettype none 
 
 module tt_um_nguyenvandongsn97_sys_full_adder (
     input  wire [7:0] ui_in,    // Dedicated inputs
